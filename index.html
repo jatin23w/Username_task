@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type UserName</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <h1 class="text-3xl font-semibold text-center">Username GitHub</h1>
+    </header>
+    <div id="loadingIndicator" class="hidden text-2xl font-bold mt-4 text-center">Loading...</div>
+    <main class="p-4">
+        <div class="mx-auto max-w-screen-lg">
+            <input type="text" id="searchInput" class="w-full px-4 py-2 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Type Username">
+            <table class="w-full bg-white shadow-md rounded-lg overflow-hidden mt-4">
+                <thead class="bg-blue-100">
+                    <tr>
+                        <th class="py-2 px-4 text-left">Git_Username</th>
+                        <th class="py-2 px-4 text-left">Git_Followers</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="Script.js"></script>
+</body>
+</html>
