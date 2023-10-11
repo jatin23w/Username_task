@@ -1,7 +1,9 @@
+// // Define the elements
 const searchInput = document.getElementById('searchInput');
 const tableBody = document.querySelector('table tbody');
 const loadingIndicator = document.getElementById('loadingIndicator');
 
+// Add an input event listener with debouncing
 searchInput.addEventListener('input', debounce(searchGitHubUsers, 300));
 
 function debounce(func, delay) {
@@ -29,9 +31,9 @@ function searchGitHubUsers() {
         return;
     }
 
-    const accessToken = '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'; // Replace with your actual token
+    const accessToken = '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'; // Replace with your actual token
 
-    // Fetch user data from GitHub API with authentication
+    // Use the template literal to correctly interpolate the username
     fetch(`https://api.github.com/search/users?q=${username}&sort=followers`, {
         method: 'GET',
         headers: {
