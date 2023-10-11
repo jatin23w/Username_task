@@ -31,7 +31,7 @@ function searchGitHubUsers() {
         return;
     }
 
-    const accessToken = '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'; // Replace with your actual token
+    const accessToken = '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'; // Replace with your actual token
 
     // Use the template literal to correctly interpolate the username
     fetch(`https://api.github.com/search/users?q=${username}&sort=followers`, {
